@@ -1,0 +1,238 @@
+.internship-length-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative; /* To position the back button */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .length-option-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .length-option-container:hover {
+    transform: scale(1.05);
+  }
+  
+  .length-option-button {
+    color: #333;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 150px;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .length-option-button:hover {
+    background-color: #e94e77;
+    border-color: #e94e77;
+    color: #fff;
+  }
+  
+  .length-option-container.selected .length-option-button {
+    background-color: #e94e77;
+    border-color: #e94e77;
+    color: #fff;
+  }
+  
+  .info {
+    font-size: 15px;
+    color: #555;
+    margin-top: 25px;
+    text-align: center;
+    max-width: 400px;
+  }
+  
+  .continue-button {
+    margin-top: 30px;
+    background-color: #e94e77;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .continue-button:hover {
+    background-color: #c43b64;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    color: #e94e77;
+  }
+  
+  /* Add subtle animations to buttons */
+  .length-option-button, .continue-button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .length-option-button:hover, .continue-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Progress Bar */
+  .progress-bar {
+    width: 80%;
+    height: 4px;
+    background-color: #e94e77;
+    margin-top: 20px;
+    border-radius: 4px;
+  }
+  
+  /* Add responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .internship-length-container {
+      padding: 20px;
+    }
+  
+    .title {
+      font-size: 24px;
+    }
+  
+    .length-option-button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  
+    .continue-button {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
+  
+
+  .professional-courses-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .professional-course-card {
+    width: 280px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .professional-course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .professional-card-image-container {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+  }
+  
+  .professional-card-image {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .professional-card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .professional-course-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .professional-course-details {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+  }
+  
+  .professional-course-pricing {
+    font-size: 16px;
+    color: #e94e77;
+    font-weight: bold;
+  }
+  
+  .professional-purchase-button {
+    padding: 10px 15px;
+    background-color: #e94e77;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: start;
+    transition: background-color 0.3s ease;
+  }
+  
+  .professional-purchase-button:hover {
+    background-color: #d13d6b;
+  }
+  
+  .no-courses-message {
+    font-size: 16px;
+    color: #999;
+    text-align: center;
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,263 @@
+/* Add Post Container */
+.add-post-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .add-post-container:hover {
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Page Title */
+  .page-title {
+    font-size: 32px;
+    margin-bottom: 35px;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  /* Main Layout */
+  .main-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  /* Post Form */
+  .post-form {
+    width: 1300px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Form Section */
+  .form-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .form-section label {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .form-section input,
+  .form-section textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form-section input:focus,
+  .form-section textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Head Post Section */
+  .head-post-section {
+    flex: 1;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .head-post-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Image Upload */
+  .image-upload {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    border: 2px dashed #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+  }
+  
+  .image-upload:hover {
+    border-color: #007bff;
+  }
+  
+  .image-upload input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .image-upload-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .image-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Publish Section */
+  .publish-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .publish-section button {
+    padding: 14px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .publish-section button:first-child {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .publish-section button:first-child:hover {
+    background-color: #e1e1e1;
+    transform: translateY(-3px);
+  }
+  
+  .publish-section button:last-child {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .publish-section button:last-child:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+  /* Save Head Post Button */
+  .save-head-post-btn {
+    padding: 14px 30px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .save-head-post-btn:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .main-layout {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .post-form,
+    .head-post-section {
+      width: 100%;
+    }
+  
+    .image-upload {
+      width: 100%;
+      height: 200px;
+    }
+  
+    .image-preview {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .publish-section {
+      flex-direction: column;
+    }
+  
+    .publish-section button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .save-head-post-btn {
+      width: 100%;
+    }
+  }
+  
+  /* Enhancements for Input Elements */
+  .form-section input,
+  .form-section textarea {
+    padding: 16px 20px;
+    font-size: 15px;
+    border-radius: 8px;
+  }
+  
+  .form-section input[type="text"]:focus,
+  .form-section textarea:focus {
+    border-color: #007bff;
+  }
+  
+  .form-section input[type="text"]::placeholder,
+  .form-section textarea::placeholder {
+    color: #777;
+    font-style: italic;
+  }
+  
+  /* Button Hover Effects */
+  button:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+  }
+  
+  /* Adding a subtle shadow to form sections for a neat effect */
+  .form-section {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+  }
+  

@@ -1,0 +1,166 @@
+.create-internship-loc {
+  width: 100%;
+  max-width: 1500px;
+  margin: 30px auto;
+  padding: 25px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.admin-form-container,
+.countries-container {
+  flex: 1;
+  min-width: 300px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-form-container {
+  max-width: 450px; /* Optional, to limit width of the form */
+}
+
+.countries-container {
+  flex: 2; /* Take up more space compared to the form */
+  display: flex;
+  flex-direction: column;
+}
+
+.location-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.flag-preview img {
+  width: 60px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  padding: 12px 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.countries-header {
+  margin-bottom: 20px;
+  color: #444;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.countries-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  overflow-y: auto; /* Enable scrolling if content exceeds container height */
+  max-height: 600px; /* Optional: Limit height for long lists */
+  padding: 10px;
+}
+
+.country-item {
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.country-details {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.country-flag {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.country-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+}
+
+.action-buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-btn:hover {
+  background-color: #218838;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}

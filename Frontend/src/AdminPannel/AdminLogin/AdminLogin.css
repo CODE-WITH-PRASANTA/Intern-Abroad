@@ -1,0 +1,241 @@
+/* Global container for the login page */
+.login-page-container {
+    display: flex;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  /* Left section with graphics */
+  .login-graphics-section {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 40px;
+    background: linear-gradient(135deg, #ff8a00, #ff5e3a);
+  }
+  
+  /* Boy graphic styling */
+  .login-boy-graphic {
+    width: 80%;
+    max-width: 500px;
+    animation: float 4s ease-in-out infinite;
+    z-index: 1;
+  }
+  
+  /* Hat graphic styling */
+  .login-hat-graphic {
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    width: 120px;
+    animation: rotate 8s linear infinite;
+    z-index: 2;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+  }
+  
+  /* Floating animation for graphics */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  /* Rotating animation for the hat graphic */
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Right section with form */
+  .login-form-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: -4px 0 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form container styling */
+  .login-form-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 1s ease;
+  }
+  .Admin--Pannel{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    font-style: italic;
+    color: #e67700;
+  }
+  /* Fade-in animation for form */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Company logo styling */
+  .login-company-logo {
+    width: 80px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+  }
+  
+  /* Heading for the form */
+  .login-heading {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Description below the heading */
+  .login-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  /* Input fields */
+  .login-input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #555;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input hover and focus styles */
+  .login-input:hover {
+    border-color: #ff8a00;
+  }
+  
+  .login-input:focus {
+    outline: none;
+    border-color: #ff8a00;
+    box-shadow: 0 0 4px rgba(255, 138, 0, 0.5);
+  }
+  
+  /* Button wrapper for alignment */
+  .login-buttons-wrapper {
+    margin-top: 20px;
+  }
+  
+  /* Login button styling */
+  .login-button {
+    width: 100%;
+    background-color: #ff8a00;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(255, 138, 0, 0.3);
+  }
+  
+  /* Hover effect for login button */
+  .login-button:hover {
+    background-color: #e67700;
+    box-shadow: 0 6px 12px rgba(255, 138, 0, 0.5);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .login-page-container {
+      flex-direction: column;
+    }
+  
+ .login-hat-graphic{
+    top: 0%;
+    right: 0%;
+    width: 80px;
+ }
+    .login-form-section {
+      width: 100%;
+      padding: 20px;
+      box-shadow: none;
+    }
+  
+    .login-form-container {
+      width: 90%;
+    }
+  
+    .login-input {
+      padding: 12px;
+    }
+  
+    .login-button {
+      font-size: 14px;
+      padding: 12px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .login-form-container {
+      padding: 20px;
+    }
+  
+    .login-heading {
+      font-size: 20px;
+    }
+  
+    .login-description {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-form-container {
+      padding: 15px;
+    }
+  
+    .login-heading {
+      font-size: 18px;
+    }
+  
+    .login-description {
+      font-size: 12px;
+    }
+  
+    .login-input {
+      font-size: 12px;
+    }
+  
+    .login-button {
+      font-size: 14px;
+    }
+  }
+  

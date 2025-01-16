@@ -1,0 +1,168 @@
+/* General table container styles */
+.table-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 90%;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-container h1 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Table styling */
+.payment-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1rem;
+  min-width: 800px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden; /* Round off the corners */
+}
+
+.payment-table th,
+.payment-table td {
+  padding: 12px 15px;
+  text-align: left;
+  color: #555;
+}
+
+.payment-table th {
+  background-color: #009879;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.payment-table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Alternating row colors */
+.payment-table tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.payment-table tr:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+
+/* Hover effect for rows */
+.payment-table tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Last row border */
+.payment-table tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+/* Responsiveness for small screens */
+@media (max-width: 768px) {
+  .payment-table th,
+  .payment-table td {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .payment-table {
+    min-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Responsiveness for different screen sizes */
+
+/* Tablet view (768px and below) */
+@media (max-width: 768px) {
+  .table-container {
+    padding: 15px;
+  }
+
+  .table-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .payment-table {
+    font-size: 0.9rem;
+    min-width: 100%;
+    overflow-x: auto;
+  }
+
+  .payment-table th,
+  .payment-table td {
+    padding: 10px;
+  }
+}
+
+/* Mobile view (480px and below) */
+@media (max-width: 480px) {
+  .table-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .payment-table {
+    font-size: 0.8rem;
+  }
+
+  .payment-table th,
+  .payment-table td {
+    padding: 8px;
+  }
+
+  .payment-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .payment-table th {
+    white-space: nowrap;
+  }
+
+  .payment-table td {
+    white-space: nowrap;
+  }
+}
+
+/* Laptop view (1024px and below) */
+@media (max-width: 1024px) {
+  .table-container {
+    padding: 18px;
+  }
+
+  .table-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .payment-table {
+    font-size: 0.95rem;
+  }
+
+  .payment-table th,
+  .payment-table td {
+    padding: 12px 10px;
+  }
+}
+
+/* 13-inch laptops (1280px and below) */
+@media (max-width: 1280px) {
+  .table-container {
+    padding: 20px;
+  }
+
+  .payment-table {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box; /* Avoid unintended sizing */
+ }
+  
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrollbars */
+    overflow-y: auto; /* Allow normal vertical scrolling */
+  }
+  
+  

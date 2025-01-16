@@ -1,0 +1,229 @@
+/* General Form Container */
+.update-contact-form {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: #ecf0f1;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  font-family: 'Helvetica Neue', sans-serif;
+  animation: fadeIn 1s ease-in-out;
+  position: relative;
+  border: 2px solid #2c3e50;
+}
+
+/* Form Title Styling */
+.form-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.4em;
+  font-weight: bold;
+  color: #f39c12;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 4px solid #f39c12;
+  padding-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Row Styling */
+.form-row {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Form Group (Label and Input Styling) */
+.form-group-update label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #f39c12;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.form-group-update textarea,
+.form-group-update input {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #7f8c8d;
+  outline: none;
+  font-size: 1rem;
+  color: #2c3e50;
+  background-color: #ecf0f1;
+  transition: all 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group-update textarea:hover,
+.form-group-update input:hover {
+  background-color: #bdc3c7;
+  border-color: #f39c12;
+}
+
+.form-group-update textarea:focus,
+.form-group-update input:focus {
+  border-color: #f39c12;
+  background-color: #bdc3c7;
+  box-shadow: 0 0 8px rgba(243, 156, 18, 0.5);
+}
+
+/* Placeholder Text Styling */
+.form-group-update textarea::placeholder,
+.form-group-update input::placeholder {
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+/* Logo Preview Styling */
+.logo-preview img {
+  max-width: 60px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  border: 2px solid #f39c12;
+  transition: transform 0.3s ease;
+}
+
+.logo-preview img:hover {
+  transform: scale(1.1);
+}
+
+/* Button Styling */
+.submit-btn,
+.add-btn {
+  padding: 14px;
+  font-size: 1.3rem;
+  color: #fff;
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 50%;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(243, 156, 18, 0.4);
+}
+
+.submit-btn:hover,
+.add-btn:hover {
+  background: linear-gradient(135deg, #e67e22, #d35400);
+  transform: scale(1.05);
+  color: #fff;
+}
+
+.submit-btn:focus,
+.add-btn:focus {
+  outline: 2px solid #f39c12;
+  transform: scale(1.02);
+}
+
+.submit-btn:active,
+.add-btn:active {
+  transform: scale(0.98);
+  box-shadow: 0 3px 10px rgba(243, 156, 18, 0.2);
+}
+
+/* Additional Locations Styling */
+.additional-locations li {
+  margin: 12px 0;
+  padding: 14px;
+  background: #34495e;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: #ecf0f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.additional-locations li:hover {
+  background: #2c3e50;
+}
+
+.additional-locations li strong {
+  color: #f39c12;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f39c12;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e67e22;
+}
+
+::-webkit-scrollbar-track {
+  background: #7f8c8d;
+  border-radius: 8px;
+}
+
+/* Animation Styling */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+  .update-contact-form {
+    padding: 25px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .form-group-update {
+    min-width: 100%;
+  }
+
+  .submit-btn,
+  .add-btn {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-title {
+    font-size: 2em;
+  }
+
+  .submit-btn,
+  .add-btn {
+    padding: 12px;
+  }
+}

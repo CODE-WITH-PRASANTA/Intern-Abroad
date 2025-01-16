@@ -1,0 +1,184 @@
+.form-container {
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-box p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.form-box {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.intern-form-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.form-group {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.phone-input {
+    display: flex;
+    gap: 15px;
+}
+
+.phone-select {
+    flex: 1;
+}
+
+.phone-number {
+    flex: 2;
+}
+
+.price-breakdown p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.price-breakdown span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.note {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.submit-button {
+    width: 50%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    display: block;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 1024px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    .intern-form-section {
+        gap: 20px;
+    }
+
+    .form-group {
+        flex: 1 1 48%;
+    }
+
+    .submit-button {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-group {
+        flex: 1 1 100%;
+    }
+
+    .form-box h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .intern-form-section {
+        gap: 15px;
+    }
+
+    .submit-button {
+        font-size: 16px;
+        padding: 12px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-box h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .form-box {
+        padding: 20px;
+    }
+
+    input, select {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .submit-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
