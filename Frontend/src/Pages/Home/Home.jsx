@@ -21,7 +21,7 @@ import Rotation from '../../Component/Rotaion/Rotaion';
 
 
 //Asserts For added places 
-import spain from '../../assets/Spain.jpg'
+import spain from '../../assets/spain.jpg'
 import Thyland from '../../assets/Thyland.jpg'
 import Singapur from '../../assets/Singapur.jpg'
 import Japan from '../../assets/Japan.jpg'

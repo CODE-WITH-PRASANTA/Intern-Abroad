@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axiosInstance from "../../utils/api"; // Import the axiosInstance
+import axiosInstance from "../../Utils/Api"; // Import the axiosInstance
 import "./InternshipLength.css";
 
 const InternshipLength = ({ formData, setFormData, onBack, onContinue }) => {

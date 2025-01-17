@@ -26,9 +26,9 @@ import CanadaSectionimg4  from '../../assets/Canada_04.svg'
 
 
 // Asserts Of the CANADA Section
-import UKSectionimg1  from '../../assets/Uk_01.png'
-import UKSectionimg2  from '../../assets/Uk_02.png'
-import UKSectionimg3  from '../../assets/Uk_03.png'
+import UKSectionimg1  from '../../assets/UK_01.png'
+import UKSectionimg2  from '../../assets/UK_02.png'
+import UKSectionimg3  from '../../assets/UK_03.png'
 import UKSectionimg4  from '../../assets/UK_04.png'
 
 

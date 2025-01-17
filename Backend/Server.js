@@ -44,9 +44,6 @@ app.use('/api/form', formRoutes);
 app.use('/api/admin', adminloginRoutes);
 app.use('/api/working-members', workingMemberRoutes);
 
-
-
-
 // Home Route
 app.get("/", (req, res) => {
   res.send("API is running...");
@@ -54,5 +51,5 @@ app.get("/", (req, res) => {
 
 
 // Start Server
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 6000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
