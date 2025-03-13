@@ -23,10 +23,6 @@ import aluminiorganisation from '../../assets/Host Organizations of The Intern G
 import TeamPhoto from '../../assets/Internship-group-teeam.jpeg'
 
 
-// Asserts of the Team Member
-import PrasantaProfile from '../../assets/PRASHANT KUMAR-MEMBER.avif'
-import AnishcharanProfile from '../../assets/ANISHA CHANDRAN-MEMBER.webp'
-import KamuridinProfile from '../../assets/KAMURIDIN SAIGAL-MEMBER.jpg'
 import WorkingMember from "../../Component/WorkingMember/WorkingMember";
 
 

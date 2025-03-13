@@ -39,7 +39,7 @@ const PricingSec = () => {
               <h3 className="price-course-title">{course.courseName}</h3>
               <div className="course-meta">
                 <div className="author">
-                  <FaUserAlt /> <span>Robot Smith</span>
+                  <FaUserAlt /> <span>Internfly Abroad</span>
                 </div>
                 <button
                   className="price-buy-now-btn"
