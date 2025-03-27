@@ -2,7 +2,7 @@ const express = require("express");
 const User = require("../models/User");
 const jwt = require("jsonwebtoken");
 const router = express.Router();
-const bcrypt = require('bcrypt');
+const bcrypt = require("bcryptjs");
 
 
 // Signup Endpoint
@@ -53,4 +53,3 @@ router.post("/login", async (req, res) => {
 
 module.exports = router;
   
-module.exports = router;
