@@ -21,6 +21,8 @@ import Employee from "./Pages/For Employee/Employee";
 import InternshipForm from "./Component/InternshipForm/InternshipForm";
 import Payment from "./Component/Payment/Payment";
 import AdminLogin from "./AdminPannel/AdminLogin/AdminLogin";
+import FloatingCallButton from "./Component/FloatingCallButton/FloatingCallButton"; // Import Call Button
+
 
 // Scroll to Top Component
 const ScrollToTop = () => {
@@ -34,6 +36,7 @@ const ScrollToTop = () => {
 };
 
 const App = () => {
+  
   const [loading, setLoading] = useState(false);
   const location = useLocation();
 
@@ -48,7 +51,7 @@ const App = () => {
     return () => clearTimeout(timer);
   }, [location]);
 
-  // Check if the current route is either /admin, /signup, or /onboarding
+
   const isHiddenRoute =
     location.pathname.startsWith("/admin") ||
     location.pathname.startsWith("/internform") ||
@@ -59,6 +62,7 @@ const App = () => {
   return (
     <div style={{ position: "relative", minHeight: "100vh" }}>
       {!isHiddenRoute && <Navbar />}
+      {!isHiddenRoute && <FloatingCallButton />} {/* Add Call Button Here */}
       {loading && (
         <div
           style={{
@@ -78,32 +82,21 @@ const App = () => {
         </div>
       )}
 
-      <Routes>
+<Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/studyzone" element={<StudyZone />} />
         <Route path="/signup" element={<Signup />} />
-
-        {/* Redirect if not authenticated */}
-        <Route
-          path="/onboarding"
-          element={isAuthenticated ? <PersonalInfo /> : <Navigate to="/signup" />}
-        />
-
+        <Route path="/onboarding" element={isAuthenticated ? <PersonalInfo /> : <Navigate to="/signup" />} />
         <Route path="/service" element={<OurService />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/bookonline" element={<BookOnline />} />
         <Route path="/collaboration/university" element={<Univercity />} />
         <Route path="/collaboration/employee" element={<Employee />} />
         <Route path="/internform" element={<InternshipForm />} />
-        
-        {/* Protected Route for Payment */}
-       <Route path="/payment" element={<Payment />} />
-        
-        {/* Admin Panel Route */}
-        <Route path="/admin" element={<AdminLogin />}/>
-
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/admin" element={<AdminLogin />} />
       </Routes>
 
       {!isHiddenRoute && <Footer />}

@@ -16,6 +16,8 @@ const internshipRoutes = require('./routes/internshipRoutes'); // Import payment
 const formRoutes = require('./routes/SubmitPaymentRoute');
 const adminloginRoutes = require('./routes/adminloginRoutes');
 const workingMemberRoutes = require('./routes/WorkingMemberRoutes');
+const phoneRoutes = require('./routes/phoneRoutes');
+
 
 
 dotenv.config(); // Load environment variables
@@ -43,6 +45,8 @@ app.use('/api/internships', internshipRoutes);
 app.use('/api/form', formRoutes);
 app.use('/api/admin', adminloginRoutes);
 app.use('/api/working-members', workingMemberRoutes);
+app.use('/api/managephone', phoneRoutes);
+
 
 // Home Route
 app.get("/", (req, res) => {
@@ -51,5 +55,5 @@ app.get("/", (req, res) => {
 
 
 // Start Server
-const PORT = process.env.PORT || 6000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

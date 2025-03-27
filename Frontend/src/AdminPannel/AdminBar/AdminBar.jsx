@@ -35,6 +35,10 @@ import ManagePaymentData from '../../Component/ManagePaymentData/ManagePaymentDa
 import ApplicationsTable from '../ApplicationsTable/ApplicationsTable';
 import PaymentTable from '../PaymentTable/PaymentTable';
 import AdminWorkingMember from '../AdminWorkingMember/AdminWorkingMember';
+import ChatIcon from '@mui/icons-material/Chat';
+import ChatManageSection from '../ChatManageSection/ChatManageSection';
+import CallManageSection from '../CallManageSection/CallManageSection';
+
 
 
 
@@ -204,6 +208,21 @@ const NAVIGATION = [
     ],
   },
   {
+    kind: 'header',
+    title: 'Management',
+  },
+  {
+    segment: 'manage-section',
+    title: 'Call Manage Section',
+    icon: <SettingsTwoToneIcon />,
+  },
+  {
+    segment: 'chat-management',
+    title: 'Chat Manage Section',
+    icon: <ChatIcon />,
+  },
+  
+  {
     kind: 'divider',
   },
   {
@@ -215,6 +234,7 @@ const NAVIGATION = [
     title: 'Invoice Generator',
     icon: <ReceiptLongIcon />,
   },
+  
 ];
 
 const demoTheme = extendTheme({
@@ -333,6 +353,9 @@ export default function DashboardLayoutBasic(props) {
               {router.pathname === '/internship-industry/internship-industry/add-industry' && <CreateIndustry />}
             </>
           )}
+          {router.pathname === '/manage-section' && <CallManageSection />}
+{router.pathname === '/chat-management' && <ChatManageSection />}
+
          
           {router.pathname.startsWith('/internship-industry/') && (
             <>
